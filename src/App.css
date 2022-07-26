@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 95%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-img {
+  margin-top: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* APPARTMENTS SECTION */
+
+.appartments-section {
+  margin-top: 37px;
+}
+
+.stays-section {
+  
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.stays-section h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.number-of-stays {
+  color: #4F4F4F;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.appartments {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  padding: 100px 0 26px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #828282;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer a {
+  color: #828282;
+}
+
+.username {
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+  .logo-img {
+    margin-top: 0;
+  }
+  .search-section {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    width: 25%;
+  }
+  .stays-section h3 {
+    font-size: 24px;
+  }
+  .appartments {
+    gap: 34px;
   }
 }

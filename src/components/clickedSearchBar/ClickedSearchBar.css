@@ -1,0 +1,259 @@
+
+.open-search-bar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 95%;
+    margin: 18px auto 0;
+}
+
+.edit {
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.close-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.group-input-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 16px;
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    width: 100%;
+    position: relative;
+}
+
+.first-input-open {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    width: 100%;
+    position: relative;
+}
+
+.second-input-open {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.label {
+    position: absolute;
+    font-size: 9px;
+    font-weight: 800;
+    top: 10px;
+    left: 26px;
+    text-transform: uppercase;
+}
+
+
+.group-1 input, .group-2 input {
+    padding: 26px 26px 12px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.search-open {
+    background-color: #EB5757E5;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 27px;
+    border-radius: 16px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    width: 126px;
+    height: 48px;
+    margin: auto;
+}
+
+.table-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 85%;
+}
+
+.table-1 {
+    width: 100%;
+    margin: 35px auto 0;
+    background-color: #fff;
+}
+
+
+.table-data {
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.td-text {
+    margin-left: 10px;
+}
+
+.guest-table {
+    width: 85%;
+    margin: 36px auto 0;
+}
+
+.guest-row {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 52px;
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.header1 {
+    font-weight: 700;
+}
+
+.header2 {
+    color: #BDBDBD;
+    font-weight: 400;
+}
+
+.guest-data {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.guest-span {
+    margin: 0 16px;
+    font-weight: 700;
+}
+
+.guest-btn {
+    width: 23px;
+    height: 23px;
+    background-color: #fff;
+    padding: 6px 7px;
+    color: #828282;
+    font-size: 14px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .open-search-bar-section {
+        height: 55%;
+    }
+    .open-search-bar-section::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        opacity: 0.5;
+    }
+    .close-btn:hover {
+        cursor: pointer;
+    }
+    .group-input-open {
+        flex-direction: row;
+        width: 80%;
+        margin-top: 94px;
+    }
+    .first-input-open {
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0;
+    }
+    .first-input-open:focus {
+        border: 1px solid #333333;
+        border-radius: 16px;
+    }
+    .second-input-open {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .second-input-open:focus {
+        border-radius: 16px;
+        border: 1px solid #333333;
+    }
+    .search-open {
+        position: relative;
+        bottom: 0;
+    }
+    .search-open:hover {
+        cursor: pointer;
+    }
+    .group-3 {
+        padding: 3px 135px;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    .table-area {
+        width: 80%;
+    }
+    .table-data:hover {
+        cursor: pointer;
+    }
+    .table-2 {
+        width: 100%;
+    }
+    .guest-table {
+        width: 35%;
+        margin-top: 48px;
+    }
+    .guest-btn:hover {
+        cursor: pointer;
+    }
+}
